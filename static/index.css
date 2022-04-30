@@ -1,0 +1,171 @@
+:root{
+	--main-bg: #ecf6ff;
+	--card-basic-border: #85b2df;
+	--card-basic-color: #0d191d;
+	--card-more-color: #186186;
+}
+::-webkit-scrollbar{
+	width: 10px;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 5px;
+	background-color: #a7a7a7;
+}
+*{
+	font-family: "宋体",serif;
+}
+body{
+	margin: 0;
+	background-color: var(--main-bg);
+}
+
+/*侧边栏以及大图标*/
+
+div#head{
+	margin: 0;
+	top: 0;
+	left: 0;
+	background-color: #ecf6ff4b;
+	backdrop-filter: blur(25px);
+	-webkit-backdrop-filter: blur(25px);/*Safari*/
+	width: 5%;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+}
+div#header{
+	top: 0;
+	border-right: 1px solid #155da4;
+	position: fixed;
+    margin-left: 5%;
+	height: 90%;
+}
+img#logo{
+	width: 33%;
+	margin-top: 33%;
+	margin-left: 33%;
+}
+img#icon{
+	width: 100%;
+}
+img#aboutLogo{
+	margin-top: 20%;
+    margin-left: 25%;
+    width: 50%;
+}
+div.title{
+	width: 3em;
+	margin-top: -1.5em;
+	margin-left: 50%;
+	transform: translateX(-1.5em);
+}
+div.title>p{
+	font-size: 3em;
+}
+
+/*诗集卡片*/
+
+div.card{
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-gap: 10px;
+	padding: 10px;
+	width: 55%;
+	margin: auto;
+}
+div.card>div{
+	border-radius: 10px;
+	border: 2px solid var(--card-basic-border);
+	color: var(--card-basic-color);
+	background-color: #ffffff;
+    height: 30em;
+	padding: 1em;
+}
+div.card div#cardMore{
+	border-color: var(--card-basic-border);
+	color: var(--card-more-color);
+	padding: 0;
+	height: 32em;
+	overflow: hidden;
+}
+div.card div#cardMore div{
+	margin-top: 31%;
+	margin-left: -2px;
+	border-radius: 10px;
+	border: 2px solid var(--card-basic-border);
+	color: var(--card-basic-color);
+	background-color: #ffffff;
+	width: 100%;
+	height: 90%;
+}
+div.card div#cardMore div#p{
+	margin: auto;
+	width: 1.5em;
+	height: auto;
+	border: none;
+}
+div.card div#cardMore p{
+	margin-top: 5em;
+	color: var(--card-basic-border);
+	font-size: 1.5em;
+}
+div.card div p.name{
+	margin-top: 5px;
+	font-size: 2em;
+	width: 32px;
+	position: absolute;
+}
+div.card div p.info{
+	writing-mode: vertical-rl;
+	height: 10em;
+	margin-left: 70px;
+}
+div.card div p.author{
+	position: absolute;
+	margin-left: 0;
+	width: 24px;
+	font-size: 1.5em;
+}
+
+/*div#load{
+	backdrop-filter: blur(25px);
+	-webkit-backdrop-filter: blur(25px);
+	background-color: #ecf6ff05;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+}*/
+
+/*about页面*/
+img.userImg{
+	border-radius: 50%;
+	width: 45%;
+}
+div#allUser{
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	grid-gap: 10px;
+	width: 40%;
+	margin: 5em auto;
+}
+div#allUser>div{
+	border-radius: 15px;
+	padding: 10px;
+	background-color: #0000000d;
+}
+div#allUser p.name{
+	text-align: center;
+	margin-top: -40%;
+	margin-left: 60%;
+	padding: 5%;
+	width: 1.075em;
+	font-size: 1.075em;
+}
+div#allUser p.do{
+	text-align: center;
+	margin: 1.5em auto 0;
+	width: 80%;
+	height: 20%;
+	font-size: 1em;
+}
