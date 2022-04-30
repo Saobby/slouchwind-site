@@ -1,0 +1,150 @@
+:root{
+	--main-black: #719fe3;
+	--main-black-hover: #96bbf1;
+	--main-black-active: #3365af;
+	--main-black-bg-color: #333333;
+}
+::-webkit-scrollbar{
+	width: 10px;
+	background-color: #3c3c3c;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 5px;
+	background-color: #5d5d5d;
+}
+a{
+	text-decoration: none;
+	font-size: 18px;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s; /*Chrome, Opera, Safari*/
+}
+p,h3{
+	color: #ffffff;
+	text-align: center;
+}
+body{
+	margin: 0;
+	background-color: var(--main-black-bg-color);
+}
+*{
+	transition-timing-function: ease-out;
+}
+
+div.head{
+	background-color: #0000000f;
+	color: var(--main-black);
+	width: 100%;
+	height: 75px;
+	box-shadow: 0px 2px 15px 0px #0a0a0a96;
+	position: fixed;
+	top: 0;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);/*Safari*/
+}
+div.head div{
+	padding: 24px 15px 30px;
+	top: 50%;
+	float: left;
+}
+div.head a:link{
+	color: var(--main-black);
+}
+div.head a:visited{
+	color: var(--main-black);
+}
+div.head a:hover{
+	color: var(--main-black-hover);
+}
+div.head a:active{
+	color: var(--main-black-active);
+}
+div#icon{
+	padding: 5px;
+}
+div#icon img{
+	height: 65px;
+	width: auto;
+}
+div#top{
+	width: 100%;
+	height: 75px;
+	top: 0;
+}
+div#bottom{
+	width: 100%;
+	height: 180px;
+	background-color: var(--main-black);
+	bottom: 0;
+	margin-top: 5em;
+}
+div#bottom>div#A{
+	text-align: center;
+	padding: 2%;
+}
+div#bottom>div#A>a{
+	color: #ffffff;
+}
+div#bottom>div#A>a:hover{
+	color: var(--main-black-hover);
+}
+div#bottom>div#A>a:active{
+	color: var(--main-black-hover);
+	font-size: 16px;
+}
+
+p.title{
+	font-size: 3em;
+	margin-block-start: 5px;
+	margin-block-end: 5px;
+}
+
+div.card{
+	border-radius: 10px;
+	background-color: #474747;
+	box-shadow: 0 0 15px #242424;
+	margin: 15px auto;
+	padding: 10px;
+	width: 250px;
+}
+
+div#time{
+	margin-top: -18px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #00000000;
+	height: 22px;
+	position: absolute;
+	right: 10px;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s; /*Chrome, Opera, Safari*/
+	overflow: hidden;
+}
+div#time:hover{
+	height: 48px;
+}
+
+div#user{
+	margin: auto;
+	justify-content: center;
+}
+img.userImg{
+	border-radius: 50%;
+	width: 15%;
+	margin: 5em;
+}
+p.name{
+	font-size: 110%;
+    background-color: #77777709;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);/*Safari*/
+    width: 4%;
+    transition-duration: 0.4s;
+    padding: 0.5%;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 2px #00000088;
+    position: absolute;
+}
+p.name:hover{
+	background-color: #77777765;
+	box-shadow: 0 0 55px 5px #000000b2;
+}
